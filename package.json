@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon GESTION-EMPLEADOS/Backend/index.js"
+    "dev": "nodemon Backend/index.js"
   },
   "keywords": [],
   "author": "",

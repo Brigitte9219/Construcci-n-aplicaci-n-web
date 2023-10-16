@@ -5,7 +5,7 @@ const app = express(); // la constante app tendrá ahora todo el funcionamiento 
 const { mongoose } = require('./database'); // no se quiere todo el archivo sino la conexión
 /** * Se crea una REST API, es la manera de decirle al servidor que reciba y envíe datos  */
 // Configuraciones
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3000);//Se configura el puerto donde el servidor va a escuchar y recibir todo tipo de solicitudes por parte del cliente
 app.use(morgan('dev'));
 app.use(express.json()); // método que ayuda a convertir el código para que el servidor pueda entender lo que viene del cliente.
 app.use(cors({origin: 'http://localhost:4200'})); // método para comunicar con el cliente
